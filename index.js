@@ -7,7 +7,8 @@ function testFunc() {
 
  function superbowlWin(array){
   let k=array.find( e => { return e.result === "W"})
-  return k.year ;
+  if(k!=-1) return k.year ;
+  else return undefined;
 
  }
 
